@@ -80,13 +80,22 @@
           </ul>
           <button class="page-hero-btn" type="button">Download</button>
           <img
-            class="page-hero-img-desk"
+            class="page-hero-img-main-desk"
             srcset="
               ./images/hero/desk/hero-bgr-desk.png    1x,
               ./images/hero/desk/hero-bgr-desk@2x.png 2x
             "
             src="./images/hero/desk/hero-bgr-desk.png"
             alt="Mobile"
+          />
+          <img
+            class="page-hero-img-decor-desk"
+            srcset="
+              ./images/hero/desk/hero-bgr-decor-desk.png    1x,
+              ./images/hero/desk/hero-bgr-decor-desk@2x.png 2x
+            "
+            src="./images/hero/desk/hero-bgr-decor-desk.png"
+            alt="Mobile decoration"
           />
           <img
             class="page-hero-img-main-tab"
@@ -98,13 +107,13 @@
             alt="Mobile"
           />
           <img
-            class="page-hero-img-main-decor"
+            class="page-hero-img-decor-tab"
             srcset="
               ./images/hero/tab/hero-bgr-decor-tab.png    1x,
               ./images/hero/tab/hero-bgr-decor-tab@2x.png 2x
             "
             src="./images/hero/tab/hero-bgr-decor-tab.png"
-            alt="Mobile decor"
+            alt="Mobile decoration"
           />
         </div>
       </section>
@@ -118,22 +127,28 @@
             transactions, and real-time updates, our app offers everything you
             need to stay connected and productive
           </p>
-          <picture>
+          <picture class="key-features-img">
             <source
-              srcset="./images/key-features/desc/key-features-desk@2x.png 2x"
+              srcset="
+                ./images/key-features/desk/key-features-desk.png    1x,
+                ./images/key-features/desk/key-features-desk@2x.png 2x
+              "
               media="(min-width: 1158px)"
               width=""
               height=""
             />
             <source
-              srcset="./images/key-features/tab/key-features-tab@2x.png 2x"
+              srcset="
+                ./images/key-features/tab/key-features-tab.png    1x,
+                ./images/key-features/tab/key-features-tab@2x.png 2x
+              "
               media="(min-width: 768px)"
               width=""
               height=""
             />
             <source
               srcset="
-                ./images/key-features/mob/key-features-mob@2x.png 1x,
+                ./images/key-features/mob/key-features-mob.png    1x,
                 ./images/key-features/mob/key-features-mob@2x.png 2x
               "
               media="(max-width: 767px)"
@@ -141,21 +156,164 @@
               height="406"
             />
             <img
-              class="key-features-img"
-              srcset="./images/key-features/desc/key-features-desk.png"
-              alt="key-features-img"
+              src="./images/key-features/desk/key-features-desk.png"
+              alt="Key features image"
               width="280"
               height="406"
             />
           </picture>
-          <ul class="key-features-list">
-            <li class="key-features-item"></li>
-            <li class="key-features-item"></li>
-            <li class="key-features-item"></li>
-            <li class="key-features-item"></li>
-            <li class="key-features-item"></li>
-            <li class="key-features-item"></li>
-          </ul>
+          <div class="key-features-container-img-double-sixth">
+            <div class="key-features-item-double-sixth">
+              <img
+                class="key-features-item-img"
+                srcset="
+                  ./images/key-features/brilliant.png    1x,
+                  ./images/key-features/brilliant@2x.png 2x
+                "
+                src="./images/key-features/brilliant.png"
+                width="28"
+                height="28"
+              />
+              <div class="key-features-item-container">
+                <h4 class="key-features-item-title">Offline Capabilities:</h4>
+                <p class="key-features-item-text">
+                  The app offers offline capabilities, allowing users to access
+                  certain features and content even when they are not connected
+                  to the internet.
+                </p>
+              </div>
+            </div>
+            <ul class="key-features-list">
+              <li class="key-features-item">
+                <img
+                  class="key-features-item-img"
+                  srcset="
+                    ./images/key-features/brilliant.png    1x,
+                    ./images/key-features/brilliant@2x.png 2x
+                  "
+                  src="./images/key-features/brilliant.png"
+                  width="28"
+                  height="28"
+                />
+                <div class="key-features-item-container">
+                  <h4 class="key-features-item-title">
+                    User-Friendly Interface:
+                  </h4>
+                  <p class="key-features-item-text">
+                    Intuitive and easy-to-navigate interface designed to provide
+                    a seamless mobile experience for users.
+                  </p>
+                </div>
+              </li>
+              <li class="key-features-item">
+                <img
+                  class="key-features-item-img"
+                  srcset="
+                    ./images/key-features/brilliant.png    1x,
+                    ./images/key-features/brilliant@2x.png 2x
+                  "
+                  src="./images/key-features/brilliant.png"
+                  width="28"
+                  height="28"
+                />
+                <div class="key-features-item-container">
+                  <h4 class="key-features-item-title">
+                    Personalized Recommendations:
+                  </h4>
+                  <p class="key-features-item-text">
+                    The app provides personalized recommendations based on user
+                    preferences and behavior, allowing for more relevant content
+                    and a more engaging experience.
+                  </p>
+                </div>
+              </li>
+              <li class="key-features-item">
+                <img
+                  class="key-features-item-img"
+                  srcset="
+                    ./images/key-features/brilliant.png    1x,
+                    ./images/key-features/brilliant@2x.png 2x
+                  "
+                  src="./images/key-features/brilliant.png"
+                  width="28"
+                  height="28"
+                />
+                <div class="key-features-item-container">
+                  <h4 class="key-features-item-title">Real-Time Updates:</h4>
+                  <p class="key-features-item-text">
+                    Users receive real-time updates and notifications to stay
+                    informed on important news and events, and to stay
+                    up-to-date with changes to the app.
+                  </p>
+                </div>
+              </li>
+              <li class="key-features-item">
+                <img
+                  class="key-features-item-img"
+                  srcset="
+                    ./images/key-features/brilliant.png    1x,
+                    ./images/key-features/brilliant@2x.png 2x
+                  "
+                  src="./images/key-features/brilliant.png"
+                  width="28"
+                  height="28"
+                />
+                <div class="key-features-item-container">
+                  <h4 class="key-features-item-title">
+                    Integration with Other Apps:
+                  </h4>
+                  <p class="key-features-item-text">
+                    The app integrates with other popular apps, making it easy
+                    for users to connect with their social media accounts, or to
+                    easily make in-app purchases using their preferred payment
+                    method.
+                  </p>
+                </div>
+              </li>
+              <li class="key-features-item">
+                <img
+                  class="key-features-item-img"
+                  srcset="
+                    ./images/key-features/brilliant.png    1x,
+                    ./images/key-features/brilliant@2x.png 2x
+                  "
+                  src="./images/key-features/brilliant.png"
+                  width="28"
+                  height="28"
+                />
+                <div class="key-features-item-container">
+                  <h4 class="key-features-item-title">
+                    Multi-Language Support:
+                  </h4>
+                  <p class="key-features-item-text">
+                    The app is designed to be accessible to users all around the
+                    world, with support for multiple languages, making it easier
+                    for people to use the app in their native language.
+                  </p>
+                </div>
+              </li>
+              <li class="key-features-item">
+                <img
+                  class="key-features-item-img"
+                  srcset="
+                    ./images/key-features/brilliant.png    1x,
+                    ./images/key-features/brilliant@2x.png 2x
+                  "
+                  src="./images/key-features/brilliant.png"
+                  width="28"
+                  height="28"
+                />
+                <div class="key-features-item-container">
+                  <h4 class="key-features-item-title">Offline Capabilities:</h4>
+                  <p class="key-features-item-text">
+                    The app offers offline capabilities, allowing users to
+                    access certain features and content even when they are not
+                    connected to the internet.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
