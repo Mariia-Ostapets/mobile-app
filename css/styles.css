@@ -324,16 +324,6 @@ input {
   font-weight: 500;
   font-size: 12px;
 }
-@media screen and (max-width: 1279px) {
-  .key-features-list-left {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .key-features-item-double-sixth {
-    display: none;
-  }
-}
 @media screen and (min-width: 768px) {
   .key-features {
     padding-top: 100px;
@@ -354,38 +344,29 @@ input {
     top: 181px;
     left: 0;
   }
-  .key-features-item-wrapper {
-    display: flex;
-    gap: 71px;
-    align-items: flex-start;
-  }
-  .key-features-item-double-sixth {
-    margin-top: auto;
-    margin-bottom: 17px;
-    display: flex;
-    gap: 13px;
-    align-items: flex-start;
-    flex-grow: 1;
-  }
   .key-features-list {
-    flex-grow: 1;
     margin-top: 0;
-    gap: 50px;
+    display: flex;
     justify-content: flex-start;
+    align-items: flex-end;
+    row-gap: 50px;
+    column-gap: 71px;
+    height: 900px;
+    flex-wrap: wrap-reverse;
   }
   .key-features-item {
     gap: 13px;
-  }
-  .key-features-item:nth-child(4n-1) {
     width: 297px;
   }
   .key-features-item:nth-child(4n) {
     width: 309px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    .key-features-item:last-child {
-      display: none;
-    }
+  .key-features-item:nth-child(5n) {
+    width: 318px;
+  }
+  .key-features-item:last-child {
+    margin-top: auto;
+    margin-bottom: 17px;
   }
   .key-features-item-container {
     gap: 13px;
@@ -400,12 +381,6 @@ input {
   }
 }
 @media screen and (min-width: 1280px) {
-  .key-features-item-double-sixth,
-  .key-features-item:nth-child(4n-1),
-  .key-features-item:nth-child(5n-3),
-  .key-features-item:nth-child(6n-5) {
-    display: none;
-  }
   .key-features {
     padding-bottom: 267px;
   }
@@ -423,30 +398,18 @@ input {
     left: 50%;
     transform: translateX(-50%);
   }
-  .key-features-item-wrapper {
-    gap: 454px;
-    width: 973px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .key-features-list-left {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 54px;
-  }
   .key-features-list {
-    gap: 54px;
-    flex-grow: 1;
+    flex-wrap: wrap;
+    row-gap: 54px;
+    column-gap: 453px;
+    height: 555px;
+    align-items: center;
   }
-  .key-features-item:nth-child(n),
-  .key-features-item-left:nth-child(n) {
-    width: 100%;
+  .key-features-item {
+    width: 258px;
   }
-  .key-features-item-left {
-    display: flex;
-    gap: 8px;
-    align-items: flex-start;
+  .key-features-item:nth-child(4n) {
+    width: 280px;
   }
 }
 /* WATCH VIDEO STYLES */
