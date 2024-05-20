@@ -97,7 +97,7 @@
               ./images/hero/desk/hero-bgr-decor-desk@2x.png 2x
             "
             src="./images/hero/desk/hero-bgr-decor-desk.png"
-            alt="Mobile decoration"
+            alt="Mobile decor"
           />
           <img
             class="page-hero-img-main-tab"
@@ -115,7 +115,16 @@
               ./images/hero/tab/hero-bgr-decor-tab@2x.png 2x
             "
             src="./images/hero/tab/hero-bgr-decor-tab.png"
-            alt="Mobile decoration"
+            alt="Mobile decor"
+          />
+          <img
+            class="page-hero-img-grad-tab-desk"
+            srcset="
+              ./images/hero/tab/hero-grad-tab-desk.png    1x,
+              ./images/hero/tab/hero-grad-tab-desk@2x.png 2x
+            "
+            src="./images/hero/tab/hero-grad-tab-desk.png"
+            alt="Mobile blur"
           />
         </div>
       </section>
@@ -296,80 +305,110 @@
       </section>
       <!-- WATCH VIDEO -->
       <section class="watch-video">
-        <div class="container">
-          <h2 class="watch-video-title">WATCH THE VIDEO</h2>
-          <p class="watch-video-text">
-            Watch the video below to see our mobile app in action. With a
-            user-friendly interface, personalized recommendations, secure
-            transactions, and real-time updates, our app is available for
-            download on both Apple and Android devices and is designed to make
-            your life easier.
-          </p>
-          <ul class="watch-video-list">
-            <li class="watch-video-list-item">
-              <svg class="watch-video-list-icon" width="60" height="60">
-                <use href="./images/icons.svg#icon-apple"></use>
-              </svg>
-            </li>
-            <li class="watch-video-list-item">
-              <svg class="watch-video-list-icon" width="60" height="60">
-                <use href="./images/icons.svg#icon-android"></use>
-              </svg>
-            </li>
-          </ul>
-          <picture class="watch-video-img">
-            <source
-              srcset="
-                ./images/watch-video/desk/watch-video-bgr-desk.png    1x,
-                ./images/watch-video/desk/watch-video-bgr-desk@2x.png 2x
-              "
-              media="(min-width: 1158px)"
-              width="501"
-              height="285"
-            />
-            <source
-              srcset="
-                ./images/watch-video/tab/watch-video-bgr-tab.png    1x,
-                ./images/watch-video/tab/watch-video-bgr-tab@2x.png 2x
-              "
-              media="(min-width: 768px)"
-              width="401"
-              height="258"
-            />
-            <source
-              srcset="
-                ./images/watch-video/tab/watch-video-bgr-spraying-tab.png    1x,
-                ./images/watch-video/tab/watch-video-bgr-spraying-tab@2x.png 2x
-              "
-              media="(min-width: 768px)"
-              width="611"
-              height="520"
-            />
-            <source
-              srcset="
-                ./images/watch-video/mob/watch-video-bgr-mob.png    1x,
-                ./images/watch-video/mob/watch-video-bgr-mob@2x.png 2x
-              "
-              media="(max-width: 767px)"
-              width="280"
-              height="258"
-            />
-            <source
-              srcset="
-                ./images/watch-video/mob/watch-video-bgr-spraying-mob.png    1x,
-                ./images/watch-video/mob/watch-video-bgr-spraying-mob@2x.png 2x
-              "
-              media="(max-width: 767px)"
-              width="280"
-              height="258"
-            />
-            <img
-              src="./images/watch-video/desk/watch-video-bgr-desk.png"
-              alt="Watch video image"
-              width="501"
-              height="285"
-            />
-          </picture>
+        <div class="container watch-video-container">
+          <div class="watch-video-text-container">
+            <h2 class="watch-video-title">WATCH THE VIDEO</h2>
+            <p class="watch-video-text">
+              Watch the video below to see our mobile app in action. With a
+              user-friendly interface, personalized recommendations, secure
+              transactions, and real-time updates, our app is available for
+              download on both Apple and Android devices and is designed to make
+              your life easier.
+            </p>
+            <ul class="watch-video-list">
+              <li class="watch-video-list-item">
+                <svg class="watch-video-list-icon" width="60" height="60">
+                  <use href="./images/icons.svg#icon-apple"></use>
+                </svg>
+              </li>
+              <li class="watch-video-list-item">
+                <svg class="watch-video-list-icon" width="60" height="60">
+                  <use href="./images/icons.svg#icon-android"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <div class="watch-video-img-container">
+            <picture class="watch-video-img">
+              <source
+                srcset="
+                  ./images/watch-video/desk/watch-video-bgr-desk.png    1x,
+                  ./images/watch-video/desk/watch-video-bgr-desk@2x.png 2x
+                "
+                media="(min-width: 1280px)"
+                width="501"
+                height="285"
+              />
+              <source
+                srcset="
+                  ./images/watch-video/tab/watch-video-bgr-tab.png    1x,
+                  ./images/watch-video/tab/watch-video-bgr-tab@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                width="401"
+                height="258"
+              />
+              <source
+                srcset="
+                  ./images/watch-video/mob/watch-video-bgr-mob.png    1x,
+                  ./images/watch-video/mob/watch-video-bgr-mob@2x.png 2x
+                "
+                media="(max-width: 767px)"
+                width="280"
+                height="258"
+              />
+              <img
+                src="./images/watch-video/desk/watch-video-bgr-desk.png"
+                alt="Watch video image"
+                width="501"
+                height="285"
+              />
+            </picture>
+          </div>
+          <img
+            class="watch-video-img-decor-desk"
+            srcset="
+              ./images/watch-video/desk/watch-video-bgr-spraying-desk.png    1x,
+              ./images/watch-video/desk/watch-video-bgr-spraying-desk@2x.png 2x
+            "
+            src="./images/watch-video/desk/watch-video-bgr-spraying-desk.png"
+            width="678"
+            height="595"
+            alt="Watch video decoration"
+          />
+          <img
+            class="watch-video-img-decor-tab"
+            srcset="
+              ./images/watch-video/tab/watch-video-bgr-spraying-tab.png    1x,
+              ./images/watch-video/tab/watch-video-bgr-spraying-tab@2x.png 2x
+            "
+            src="./images/watch-video/tab/watch-video-bgr-spraying-tab.png"
+            width="611"
+            height="520"
+            alt="Watch video decoration"
+          />
+          <img
+            class="watch-video-img-decor-mob"
+            srcset="
+              ./images/watch-video/mob/watch-video-bgr-spraying-mob.png    1x,
+              ./images/watch-video/mob/watch-video-bgr-spraying-mob@2x.png 2x
+            "
+            src="./images/watch-video/mob/watch-video-bgr-spraying-mob.png"
+            width="320"
+            height="362"
+            alt="Watch video decoration"
+          />
+          <img
+            class="watch-video-img-grad-tab-desk"
+            srcset="
+              ./images/watch-video/tab/watch-video-bgr-grad-tab-desk.png    1x,
+              ./images/watch-video/tab/watch-video-bgr-grad-tab-desk@2x.png 2x
+            "
+            src="./images/watch-video/tab/watch-video-bgr-grad-tab-desk.png"
+            width="414"
+            height="417"
+            alt="Watch video decoration"
+          />
         </div>
       </section>
     </main>
