@@ -578,7 +578,81 @@
           </ul>
         </div>
       </section>
+      <!-- REVIEWS -->
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews-title">what our costumer's say</h2>
+          <div class="reviews-img-container">
+            <picture
+              ><source
+                srcset="
+                  ./images/reviews/desk/jon-doe-desk.png    1x,
+                  ./images/reviews/desk/jon-doe-desk@2x.png 2x
+                "
+                media="(min-width: 1280px)"
+                width="181"
+                height="183" />
+              <source
+                srcset="
+                  ./images/reviews/tab-mob/jon-doe-tab-mob.png    1x,
+                  ./images/reviews/tab-mob/jon-doe-tab-mob@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                width="181"
+                height="181" />
+              <img
+                src="./images/reviews/desk/jon-doe-desk.png"
+                alt="Costumer avatar"
+                width="181"
+                height="183"
+            /></picture>
+          </div>
+          <h3 class="reviews-costumer-name">Jon Doe</h3>
+          <p class="reviews-costumer-company">Company Inc.</p>
+          <p class="reviews-costumer-text">
+            I've been using this app for a few weeks now and I have to say, I'm
+            really impressed. It's so easy to use and the personalized
+            recommendations are spot-on. Plus, the transactions are secure and
+            the updates are always timely. I would definitely recommend this app
+            to anyone looking for a better mobile experience.
+          </p>
+          <ul class="reviews-slide-list">
+            <li class="reviews-slide-item"></li>
+            <li class="reviews-slide-item"></li>
+            <li class="reviews-slide-item"></li>
+            <li class="reviews-slide-item"></li>
+            <li class="reviews-slide-item"></li>
+            <li class="reviews-slide-item"></li>
+          </ul>
+        </div>
+      </section>
     </main>
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      <div class="container">
+        <p class="page-footer-title">contact us</p>
+        <form name="feedback">
+          <input
+            class="form-input"
+            type="text"
+            name="user-name"
+            placeholder="Name"
+          />
+          <input
+            class="form-input"
+            type="email"
+            name="user-email"
+            placeholder="Email"
+          />
+          <textarea
+            class="form-textarea"
+            name="user-message"
+            placeholder="Message"
+          ></textarea>
+          <button></button>
+        </form>
+      </div>
+    </footer>
     <footer></footer>
   </body>
 </html>
