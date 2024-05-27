@@ -327,6 +327,7 @@ input {
 }
 .key-features-title {
   font-size: 20px;
+  line-height: 1.2;
   margin-bottom: 40px;
   text-transform: uppercase;
   text-align: center;
@@ -356,11 +357,12 @@ input {
 }
 .key-features-item-title {
   font-size: 14px;
-  line-height: 1.43;
+  line-height: 1.5;
 }
 .key-features-item-text {
   font-weight: 500;
   font-size: 12px;
+  line-height: 1.2;
 }
 @media screen and (min-width: 768px) {
   .key-features {
@@ -409,7 +411,6 @@ input {
   }
   .key-features-item-text {
     font-size: 14px;
-    line-height: 1.4;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -462,6 +463,7 @@ input {
 }
 .watch-video-title {
   font-size: 20px;
+  line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 24px;
@@ -469,6 +471,7 @@ input {
 .watch-video-text {
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -591,6 +594,7 @@ input {
 .our-team-title {
   margin-bottom: 24px;
   font-size: 20px;
+  line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
 }
@@ -626,6 +630,7 @@ input {
 }
 .our-team-item-title {
   font-size: 18px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -744,6 +749,7 @@ input {
 .reviews-title {
   font-size: 20px;
   text-align: center;
+  line-height: 1.2;
   text-transform: uppercase;
   width: 179px;
   margin-left: auto;
@@ -758,6 +764,7 @@ input {
 }
 .reviews-costumer-name {
   font-size: 18px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -841,6 +848,7 @@ input {
 .page-footer-title {
   font-weight: 700;
   font-size: 20px;
+  line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
@@ -856,6 +864,7 @@ input {
   outline: transparent;
   padding: 8px 12px;
   font-weight: 500;
+  line-height: 1.2;
   color: #939eac;
   margin-bottom: 20px;
 }
@@ -868,6 +877,7 @@ input {
   padding: 8px 12px;
   margin-bottom: 20px;
   font-weight: 500;
+  line-height: 1.2;
   color: #939eac;
   resize: none;
 }
@@ -882,6 +892,7 @@ input {
   margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
+  line-height: 1.2;
   color: #ffffff;
   text-transform: uppercase;
   background-origin: border-box;
@@ -911,12 +922,14 @@ input {
 .page-footer-text-main {
   font-weight: 500;
   font-size: 20px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 20px;
 }
 .page-footer-text {
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 49px;
 }
@@ -951,6 +964,7 @@ input {
 .page-footer-address-link {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.2;
   text-align: center;
 }
 .page-footer-address-link-email {
@@ -965,5 +979,6 @@ input {
 .page-footer-copyright {
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.2;
   width: 193px;
 }
