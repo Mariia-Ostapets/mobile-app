@@ -845,6 +845,19 @@ input {
   padding-top: 40px;
   padding-bottom: 22px;
 }
+.page-footer-container {
+  background-image: url(../images/footer/footer-bgr-spraying-big.png);
+  background-repeat: no-repeat;
+  background-size: 300px 500px;
+  background-position: center bottom 500px;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .page-footer-container {
+    background-image: url(../images/footer/footer-bgr-spraying-big@2x.png);
+  }
+}
 .page-footer-title {
   font-weight: 700;
   font-size: 20px;
@@ -1059,15 +1072,16 @@ input {
     padding-bottom: 21px;
   }
   .page-footer-container {
-    background-image: url(../images/footer/desk/footer-bgr-spraying-big.png);
+    background-image: url(../images/footer/footer-bgr-spraying-big.png);
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-size: 500px 700px;
+    background-position: right 150px bottom;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .page-footer-container {
-      background-image: url(../images/footer/desk/footer-bgr-spraying-big@2x.png);
+      background-image: url(../images/footer/footer-bgr-spraying-big@2x.png);
     }
   }
   .page-footer-title {
