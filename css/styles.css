@@ -324,6 +324,19 @@ input {
   padding-top: 40px;
   padding-bottom: 40px;
   position: relative;
+  background-image: url(../images/key-features/key-features-bgr-spraying-top-mob.png),
+    url(../images/key-features/key-features-bgr-spraying-btm-mob.png);
+  background-repeat: no-repeat;
+  background-size: 768px 841px;
+  background-position: center -100px, center bottom;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .key-features {
+    background-image: url(../images/key-features/key-features-bgr-spraying-top-mob@2x.png),
+      url(../images/key-features/key-features-bgr-spraying-btm-mob@2x.png);
+  }
 }
 .key-features-title {
   font-size: 20px;
@@ -340,10 +353,14 @@ input {
   margin-bottom: 40px;
 }
 .key-features-list {
-  margin-top: 44px;
   display: flex;
   flex-direction: column;
   gap: 44px;
+}
+@media screen and (max-width: 767px) {
+  .key-features-list {
+    margin-top: 44px;
+  }
 }
 .key-features-item {
   display: flex;
@@ -368,6 +385,18 @@ input {
   .key-features {
     padding-top: 100px;
     padding-bottom: 47px;
+    background-image: url(../images/key-features/key-features-bgr-spraying-left-tab-desk.png),
+      url(../images/key-features/key-features-bgr-spraying-right-tab-desk.png);
+    background-size: 1280px 800px, 1280px 800px;
+    background-position: center -85px, center 450px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .key-features {
+      background-image: url(../images/key-features/key-features-bgr-spraying-left-tab-desk@2x.png),
+        url(../images/key-features/key-features-bgr-spraying-right-tab-desk@2x.png);
+    }
   }
   .key-features-container {
     position: relative;
@@ -382,25 +411,27 @@ input {
   .key-features-img {
     position: absolute;
     top: 181px;
-    left: 0;
+    left: calc(50% - 450px);
   }
   .key-features-list {
-    margin-top: 0;
-    display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     row-gap: 50px;
     column-gap: 71px;
-    height: 860px;
-    flex-wrap: wrap-reverse;
+    height: 810px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .key-features-list {
+      flex-wrap: wrap-reverse;
+    }
+    .key-features-item:last-child {
+      margin-top: auto;
+      margin-bottom: 17px;
+    }
   }
   .key-features-item {
     gap: 13px;
     width: 300px;
-  }
-  .key-features-item:last-child {
-    margin-top: auto;
-    margin-bottom: 17px;
   }
   .key-features-item-container {
     gap: 13px;
@@ -416,6 +447,7 @@ input {
 @media screen and (min-width: 1280px) {
   .key-features {
     padding-bottom: 100px;
+    background-position: calc(50% - 250px) 350px, calc(50% + 250px) -50px;
   }
   .key-features-title {
     margin-bottom: 80px;
@@ -438,16 +470,10 @@ input {
     height: 550px;
     align-items: center;
   }
-  .key-features-item {
-    width: 300px;
-  }
   .key-features-item:nth-child(4n),
   .key-features-item:nth-child(5n),
   .key-features-item:nth-child(6n) {
     width: 350px;
-  }
-  .key-features-item:last-child {
-    margin: 0;
   }
 }
 /* WATCH VIDEO STYLES */
@@ -456,6 +482,17 @@ input {
   color: #fff;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-image: url(../images/watch-video/mob/watch-video-bgr-spraying-mob.png);
+  background-repeat: no-repeat;
+  background-size: 320px 300px;
+  background-position: center bottom;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .watch-video {
+    background-image: url(../images/watch-video/mob/watch-video-bgr-spraying-mob@2x.png);
+  }
 }
 @media screen and (max-width: 1279px) {
   .watch-video-title,
@@ -502,6 +539,18 @@ input {
 @media screen and (min-width: 768px) {
   .watch-video {
     padding-top: 80px;
+    background-image: url(../images/watch-video/tab/watch-video-bgr-spraying-small-tab-desk.png),
+      url(../images/watch-video/tab/watch-video-bgr-spraying-big-tab.png);
+    background-size: 414px 417px, 611px 520px;
+    background-position: calc(50% - 200px) -90px, center 220px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .watch-video {
+      background-image: url(../images/watch-video/tab/watch-video-bgr-spraying-small-tab-desk@2x.png),
+        url(../images/watch-video/tab/watch-video-bgr-spraying-big-tab@2x.png);
+    }
   }
   .watch-video-title {
     font-size: 24px;
@@ -524,6 +573,18 @@ input {
   .watch-video {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-image: url(../images/watch-video/tab/watch-video-bgr-spraying-small-tab-desk.png),
+      url(../images/watch-video/desk/watch-video-bgr-spraying-big-desk.png);
+    background-size: 414px 417px, 840px 595px;
+    background-position: calc(50% - 290px) bottom, calc(50% + 290px) -100px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .watch-video {
+      background-image: url(../images/watch-video/tab/watch-video-bgr-spraying-small-tab-desk@2x.png),
+        url(../images/watch-video/desk/watch-video-bgr-spraying-big-desk@2x.png);
+    }
   }
   .watch-video-container {
     display: flex;
@@ -547,7 +608,7 @@ input {
     url(../images/team/team-bgr-spraying-btm-mob-tab.png);
   background-repeat: no-repeat;
   background-size: 768px 500px, 768px 1300px;
-  background-position: center top, center bottom;
+  background-position: center top, center 800px;
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -644,17 +705,8 @@ input {
   .our-team {
     padding-top: 80px;
     padding-bottom: 40px;
-    background-image: url(../images/team/team-bgr-spraying-top-mob-tab.png),
-      url(../images/team/team-bgr-spraying-btm-mob-tab.png);
     background-size: 1280px 800px, 1280px 800px;
-  }
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .our-team {
-      background-image: url(../images/team/team-bgr-spraying-top-mob-tab@2x.png),
-        url(../images/team/team-bgr-spraying-btm-mob-tab@2x.png);
-    }
+    background-position: center top, center 400px;
   }
   .our-team-title {
     margin-bottom: 40px;
@@ -728,7 +780,7 @@ input {
   background-image: url(../images/reviews/reviews-bgr-mob.png);
   background-repeat: no-repeat;
   background-size: 768px 1183px;
-  background-position: center top;
+  background-position: center -110px;
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -818,15 +870,7 @@ input {
 }
 @media screen and (min-width: 1280px) {
   .reviews {
-    background-image: url(../images/reviews/reviews-bgr-tab-desk.png);
     background-size: 2560px 1204px;
-  }
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .reviews {
-      background-image: url(../images/reviews/desk/reviews-bgr-tab-desk@2x.png);
-    }
   }
   .reviews-costumer-text {
     width: 886px;
