@@ -210,7 +210,6 @@ input {
   height: 42px;
   background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
   padding: 0;
-  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
@@ -220,7 +219,7 @@ input {
 }
 .page-hero-btn span {
   position: relative;
-  z-index: 1;
+  z-index: 100;
 }
 .page-hero-btn::before {
   content: "";
@@ -231,7 +230,7 @@ input {
   background: #06071b;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: 1;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -239,21 +238,32 @@ input {
 .page-hero-btn:focus::before {
   opacity: 1;
 }
-.page-hero-container-bottom,
-.page-hero-img-main-desk,
-.page-hero-img-decor-desk,
-.page-hero-img-main-tab,
-.page-hero-img-decor-tab,
-.page-hero-img-grad-tab-desk {
-  display: none;
+@media screen and (max-width: 767px) {
+  .page-hero-btn {
+    margin: 0 auto;
+  }
+  .page-hero-img {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .page-hero {
     padding-top: 142px;
     padding-bottom: 143px;
     max-width: 768px;
-    background-image: none;
+    background-image: url(../images/hero/tab/hero-bgr-decor-tab.png),
+      url(../images/hero/tab/hero-grad-tab-desk.png);
+    background-size: 362px 352px, 350px 250px;
+    background-position: bottom 0 right 207px, bottom 240px right 365px;
     position: relative;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .page-hero {
+      background-image: url(../images/hero/tab/hero-bgr-decor-tab@2x.png),
+        url(../images/hero/tab/hero-grad-tab-desk@2x.png);
+    }
   }
   .page-hero-title {
     font-size: 40px;
@@ -270,28 +280,10 @@ input {
     font-size: 14px;
     max-width: 380px;
   }
-  .page-hero-btn {
-    margin-left: 0;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    .page-hero-img-main-tab {
-      display: block;
-      position: absolute;
-      bottom: -60px;
-      right: 32px;
-    }
-    .page-hero-img-decor-tab {
-      display: block;
-      position: absolute;
-      bottom: 0;
-      right: 207px;
-    }
-    .page-hero-img-grad-tab-desk {
-      display: block;
-      position: absolute;
-      bottom: 240px;
-      right: 350px;
-    }
+  .page-hero-img {
+    position: absolute;
+    bottom: -60px;
+    right: 32px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -299,24 +291,21 @@ input {
     padding-top: 243px;
     padding-bottom: 146px;
     max-width: 1280px;
+    background-image: url(../images/hero/desk/hero-bgr-decor-desk.png),
+      url(../images/hero/tab/hero-grad-tab-desk.png);
+    background-size: 541px 418px, 400px 250px;
+    background-position: bottom 39px right 400px, bottom 240px left 10px;
   }
-  .page-hero-img-main-desk {
-    display: block;
-    position: absolute;
-    bottom: -60px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .page-hero {
+      background-image: url(../images/hero/desk/hero-bgr-decor-desk@2x.png),
+        url(../images/hero/tab/hero-grad-tab-desk@2x.png);
+    }
+  }
+  .page-hero-img {
     right: 55px;
-  }
-  .page-hero-img-decor-desk {
-    display: block;
-    position: absolute;
-    bottom: 39px;
-    right: 400px;
-  }
-  .page-hero-img-grad-tab-desk {
-    display: block;
-    position: absolute;
-    bottom: 240px;
-    left: 25px;
   }
 }
 /* KEY FEATURES */
