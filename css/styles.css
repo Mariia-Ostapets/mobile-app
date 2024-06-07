@@ -252,9 +252,11 @@ input {
     padding-bottom: 143px;
     max-width: 768px;
     background-image: url(../images/hero/tab/hero-bgr-decor-tab.png),
-      url(../images/hero/tab/hero-grad-tab-desk.png);
-    background-size: 362px 352px, 350px 250px;
-    background-position: bottom 0 right 207px, bottom 240px right 365px;
+      url(../images/hero/tab/hero-grad-tab-desk.png),
+      url(../images/hero/tab/hero-spraying-big-tab-desk.png);
+    background-size: 362px 352px, 350px 250px, 500px 500px;
+    background-position: bottom 0 right 207px, bottom 240px right 365px,
+      top 150px left 360px;
     position: relative;
   }
   @media screen and (min-device-pixel-ratio: 2),
@@ -262,7 +264,8 @@ input {
     screen and (min-resolution: 2dppx) {
     .page-hero {
       background-image: url(../images/hero/tab/hero-bgr-decor-tab@2x.png),
-        url(../images/hero/tab/hero-grad-tab-desk@2x.png);
+        url(../images/hero/tab/hero-grad-tab-desk@2x.png),
+        url(../images/hero/tab/hero-spraying-big-tab-desk@2x.png);
     }
   }
   .page-hero-title {
@@ -292,16 +295,19 @@ input {
     padding-bottom: 146px;
     max-width: 1280px;
     background-image: url(../images/hero/desk/hero-bgr-decor-desk.png),
-      url(../images/hero/tab/hero-grad-tab-desk.png);
-    background-size: 541px 418px, 400px 250px;
-    background-position: bottom 39px right 400px, bottom 240px left 10px;
+      url(../images/hero/tab/hero-grad-tab-desk.png),
+      url(../images/hero/tab/hero-spraying-big-tab-desk.png);
+    background-size: 541px 418px, 400px 250px, 700px 800px;
+    background-position: bottom 39px right 400px, bottom 240px left 10px,
+      top 30px left 680px;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .page-hero {
       background-image: url(../images/hero/desk/hero-bgr-decor-desk@2x.png),
-        url(../images/hero/tab/hero-grad-tab-desk@2x.png);
+        url(../images/hero/tab/hero-grad-tab-desk@2x.png),
+        url(../images/hero/tab/hero-spraying-big-tab-desk@2x.png);
     }
   }
   .page-hero-img {
