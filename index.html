@@ -27,13 +27,20 @@
           <a class="page-logo" href="/index.html">Mobileapp</a>
           <ul class="header-nav-list">
             <li><a class="header-nav-link" href="./index.html">HOME</a></li>
-            <li><a class="header-nav-link" href="">FEATURES</a></li>
-            <li><a class="header-nav-link" href="">TEAM</a></li>
-            <li><a class="header-nav-link" href="">TESTIMONIALS</a></li>
-            <li><a class="header-nav-link" href="">CONTACT</a></li>
+            <li>
+              <a class="header-nav-link" href="#key-features">FEATURES</a>
+            </li>
+            <li><a class="header-nav-link" href="#our-team">TEAM</a></li>
+            <li><a class="header-nav-link" href="#reviews">TESTIMONIALS</a></li>
+            <li><a class="header-nav-link" href="#page-footer">CONTACT</a></li>
           </ul>
         </nav>
-        <button class="header-btn" type="button">
+        <button
+          class="header-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="header-btn-icon" width="26" height="16">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -112,7 +119,7 @@
         </div>
       </section>
       <!-- KEY FEATURES -->
-      <section class="key-features">
+      <section class="key-features" id="key-features">
         <div class="container key-features-container">
           <h2 class="key-features-title">KEY FEATURES</h2>
           <p class="key-features-text">
@@ -342,7 +349,7 @@
         </div>
       </section>
       <!-- OUR TEAM -->
-      <section class="our-team">
+      <section class="our-team" id="our-team">
         <div class="container">
           <h2 class="our-team-title">Our team</h2>
           <p class="our-team-text">
@@ -509,7 +516,7 @@
         </div>
       </section>
       <!-- REVIEWS -->
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="reviews-title">what our costumer's say</h2>
           <div class="reviews-img-container">
@@ -558,7 +565,7 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <footer class="page-footer">
+    <footer class="page-footer" id="page-footer">
       <div class="container">
         <p class="page-footer-title">contact us</p>
         <div class="page-footer-main-container">
@@ -571,12 +578,18 @@
                     type="text"
                     name="user-name"
                     placeholder="Name"
+                    required
+                    autocapitalize="words"
+                    minlength="2"
+                    pattern="^[a-zA-Z0-9]+( [a-zA-Z0-9]+){0,2}$"
+                    title="John Fitzgerald Kennedy"
                   />
                   <input
                     class="form-input"
                     type="email"
                     name="user-email"
                     placeholder="Email"
+                    required
                   />
                 </div>
                 <textarea
@@ -584,7 +597,7 @@
                   name="user-message"
                   placeholder="Message"
                 ></textarea>
-                <button class="form-btn" type="button">
+                <button class="form-btn" type="submit">
                   <span>Submit</span>
                 </button>
               </div>
@@ -792,5 +805,38 @@
         </div>
       </div>
     </footer>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-close-btn js-close-menu" type="button">
+        <svg width="32" height="32">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <a class="page-logo-mobile-menu" href="/index.html">Mobileapp</a>
+        <ul class="mobile-menu-nav-list">
+          <li><a class="mobile-menu-nav-link" href="./index.html">HOME</a></li>
+          <li>
+            <a class="mobile-menu-nav-link" href="#key-features">FEATURES</a>
+          </li>
+          <li><a class="mobile-menu-nav-link" href="#our-team">TEAM</a></li>
+          <li>
+            <a class="mobile-menu-nav-link" href="#reviews">TESTIMONIALS</a>
+          </li>
+          <li>
+            <a class="mobile-menu-nav-link" href="#page-footer">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- JavaScript -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>
