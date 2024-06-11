@@ -1,4 +1,7 @@
 /* COMMON STYLES */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Inter", sans-serif;
   color: #000000;
