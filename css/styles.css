@@ -1379,7 +1379,10 @@ input {
   display: flex;
   gap: 5px;
   justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
+}
+.modal-container-icon-list {
+  flex-shrink: 0;
 }
 .modal-container-item:not(:last-child) {
   margin-bottom: 14px;

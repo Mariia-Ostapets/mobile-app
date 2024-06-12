@@ -33,11 +33,11 @@
   openModalBtn.addEventListener('click', toggleModal);
   closeModalBtn.addEventListener('click', toggleModal);
 
-//   // Вказати брейкпоінт після якого повинна зачинятися
-//   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-//     if (!e.matches) return;
-//     modalWindow.classList.remove('is-open');
-//     openModalBtn.setAttribute('aria-expanded', false);
-//     bodyScrollLock.enableBodyScroll(document.body);
-//   });
-// })();
+  // Вказати брейкпоінт після якого повинна зачинятися
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    modalWindow.classList.remove('is-open');
+    openModalBtn.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
+  });
+})();

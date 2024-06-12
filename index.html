@@ -85,7 +85,12 @@
               </div>
             </li>
           </ul>
-          <button class="page-hero-btn" type="button">
+          <button
+            class="page-hero-btn js-open-modal"
+            type="button"
+            aria-expanded="false"
+            aria-controls="modal-window"
+          >
             <span>Download</span>
           </button>
           <picture class="page-hero-img">
@@ -613,7 +618,7 @@
               <li class="page-footer-item">
                 <a
                   class="page-footer-link"
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/goITclub/"
                   target="_blank"
                   ><svg class="page-footer-icon" width="40" height="40">
                     <use href="./images/icons.svg#icon-facebook"></use>
@@ -721,7 +726,7 @@
               <li class="page-footer-item">
                 <a
                   class="page-footer-link"
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/school/goit-start-your-career-in-it/"
                   target="_blank"
                   ><svg class="page-footer-icon" width="40" height="40">
                     <use href="./images/icons.svg#icon-linkedin"></use></svg
@@ -830,9 +835,9 @@
       </nav>
     </div>
     <!-- MODAL WINDOW -->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay js-modal-container" id="modal-window">
       <div class="modal">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn js-close-modal" type="button">
           <svg class="modal-close-btn-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -923,7 +928,7 @@
                   </li>
                   <li class="modal-container-item">
                     <svg
-                      class="modal-container-icon-list"
+                      class="modal-container-icon-list test"
                       width="14"
                       height="14"
                     >
