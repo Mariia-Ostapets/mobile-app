@@ -46,6 +46,9 @@ input {
   font-family: inherit;
   padding: 0;
 }
+label {
+  display: block;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
